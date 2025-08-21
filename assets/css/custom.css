@@ -1,0 +1,67 @@
+:root {
+  --cor-principal: #2a9d8f;
+  --cor-secundaria: #264653;
+  --cor-texto:    #333333;
+  --fonte-titulo:  'Montserrat', sans-serif;
+  --fonte-body:     'Roboto', sans-serif;
+}
+
+/* Fonte e cores padrão */
+body {
+  font-family: var(--fonte-body);
+  color: var(--cor-texto);
+  background-color: #f8f9fa;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-secundaria);
+  margin-bottom: 1rem;
+}
+
+/* Botões com cantos arredondados e cor custom */
+.btn-primary {
+  background-color: var(--cor-principal);
+  border-color: var(--cor-principal);
+  border-radius: 2rem;
+}
+.btn-primary:hover {
+  background-color: darken(var(--cor-principal), 5%);
+  border-color: darken(var(--cor-principal), 5%);
+}
+
+/* Cartões com sombra suave */
+.card {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Tabelas com espaçamento maior */
+.table th,
+.table td {
+  vertical-align: middle;
+  padding: 0.75rem 1rem;
+}
+
+/* Footer fixo mais leve */
+footer {
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  background: #ffffff;
+  text-align: center;
+  color: #666;
+}
+
+
+@media (max-width: 576px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .table td, .table th {
+    padding: .5rem .25rem;
+  }
+}
+
